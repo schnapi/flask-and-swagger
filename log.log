@@ -1,0 +1,129 @@
+Exception on /apiPets/pets [GET]
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 916, in connect
+    **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\socket.py", line 722, in create_connection
+    raise err
+  File "C:\Program Files\Anaconda3\envs\python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 63, in getPets
+    connection = connect()
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 35, in connect
+    conv=conv)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 706, in __init__
+    self.connect()
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 963, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask_restplus\api.py", line 313, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask_restplus\resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\apis\pets.py", line 58, in get
+    return db.getPets()
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 69, in getPets
+    connection.close()
+UnboundLocalError: local variable 'connection' referenced before assignment
+Exception on /apiPets/pets [GET]
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 916, in connect
+    **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\socket.py", line 722, in create_connection
+    raise err
+  File "C:\Program Files\Anaconda3\envs\python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 63, in getPets
+    connection = connect()
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 35, in connect
+    conv=conv)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 706, in __init__
+    self.connect()
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 963, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask_restplus\api.py", line 313, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask_restplus\resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\apis\pets.py", line 58, in get
+    return db.getPets()
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 69, in getPets
+    connection.close()
+UnboundLocalError: local variable 'connection' referenced before assignment
+Exception on /apiPets/pets [GET]
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 916, in connect
+    **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\socket.py", line 722, in create_connection
+    raise err
+  File "C:\Program Files\Anaconda3\envs\python36\lib\socket.py", line 713, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 63, in getPets
+    connection = connect()
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 35, in connect
+    conv=conv)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\__init__.py", line 90, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 706, in __init__
+    self.connect()
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\pymysql\connections.py", line 963, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask_restplus\api.py", line 313, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask\views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\envs\python36\lib\site-packages\flask_restplus\resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\apis\pets.py", line 58, in get
+    return db.getPets()
+  File "c:\Users\Sandi\Desktop\sandi_learning\flask-RESTplus app\database\db.py", line 69, in getPets
+    connection.close()
+UnboundLocalError: local variable 'connection' referenced before assignment
